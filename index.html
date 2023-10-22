@@ -1,0 +1,38 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6c23bce3fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Live Code Editor<i class="fa-solid fa-code"></i></h1>
+    <div class="container">        
+        <div class="left">
+            <label><i class="fab fa-html5"></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            <button id="copy-html" class="copy-button">Copy HTML</button>
+
+            <label><i class="fab fa-css3-alt"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            <button id="copy-css" class="copy-button">Copy CSS</button>
+
+            <label><i class="fab fa-js"></i>JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+            <button id="copy-js" class="copy-button">Copy JS</button>
+
+            <button id="save-code">Save</button>
+            <button id="lock-code">Lock</button>
+        </div>
+        <div class="right">
+            <label><i class="fas fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+  <script src="./index.js"></script>
+</body>
+</html>
+
